@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email API</title>
+    
 </head>
 <body>
+    <div v-if="emails.length === 10" id="root">
+        <ul class="list">
+            <li  v-for="(item, i) in emails" :key="i">{{ item }}</li>
+        </ul>
 
-    <!-- javascript -->
-    <script src="<https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js>"></script>
+
+
+
+    </div>
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.common.dev.min.js" integrity="sha512-TpgbLHXaTCAZ7ULhjopb1PveTz5Jx6KEQUtMfXhV0m0EArh+6O8ybZjjDN1Yug6oagN6iFm6EoMjuYSiFr0qXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- myScript -->
     <script src="script.js"></script>
 </body>
 </html>
